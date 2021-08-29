@@ -8,6 +8,7 @@ import java.util.List;
 
 @Repository
 public class UserProfileDataAccessService {
+
     private final FakeUserProfileDataStore fakeUserProfileDataStore;
 
     @Autowired
@@ -15,7 +16,7 @@ public class UserProfileDataAccessService {
         this.fakeUserProfileDataStore = fakeUserProfileDataStore;
     }
 
-    List<UserProfile> getUserProfile() {
+    List<UserProfile> getUserProfiles() {
         return fakeUserProfileDataStore.getUserProfiles();
     }
 }
