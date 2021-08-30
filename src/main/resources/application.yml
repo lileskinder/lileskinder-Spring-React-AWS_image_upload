@@ -4,3 +4,7 @@ logging:
       amazonaws:
         util:
           EC2MetadataUtils: error
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
